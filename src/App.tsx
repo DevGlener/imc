@@ -1,11 +1,12 @@
-import Home from "./pages/Home/Home"
-
+import Home from "./pages/Home/Home.tsx"
+import GlobalStyle from './styles/global'
 
 function App() {
   
 
   return (
     <>
+    <GlobalStyle />
       <Home />
     </>
   )

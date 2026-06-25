@@ -1,13 +1,22 @@
-import * as assets from "../../assets";
-import { ImageAnimation } from "./home";
-
+import { Container , Section , Footer , Aside } from "./style";
+import animacao from '../../assets/animacao.svg'
 function Home() {
   return (
     <>
-      <ImageAnimation
-        src={assets.animacao}
-        alt="Imagem de uma pessoa medindo o imc"
-      />
+      <Container>
+        <Section></Section>
+        <Aside>
+          <img src={animacao} alt="imagem de animação" />
+        </Aside>
+        <Footer>
+         <p> 
+          © 2024 . All rights reserved. 
+         </p>
+         <p>
+         | dev_glener | Privacy Policy | Terms of Service | Contact Support 
+        </p> 
+        </Footer>
+      </Container>
     </>
   );
 }
